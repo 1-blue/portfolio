@@ -1,0 +1,41 @@
+/**
+ * 메인 폰트
+ * https://noonnu.cc/font_page/366
+ * https://corp.gmarket.com/fonts
+ */
+ @font-face {
+  font-family: "GmarketSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/GmarketSansTTFBold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "GmarketSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/GmarketSansTTFMedium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "GmarketSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/GmarketSansTTFLight.ttf") format("woff2");
+}
+
+/**
+ * 서브 폰트
+ * https://noonnu.cc/font_page/1195
+ * https://fonts.cafe24.com
+ */
+ @font-face {
+  font-family: "Cafe24Supermagic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Cafe24SupermagicBold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Cafe24Supermagic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Cafe24SupermagicRegular.ttf") format("woff2");
+}
