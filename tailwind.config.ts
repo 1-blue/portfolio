@@ -44,6 +44,10 @@ const config: Config = {
         main: ["GmarketSans", "Noto Sans KR", "sans-serif"],
         sub: ["Cafe24Supermagic", "Noto Sans KR", "sans-serif"],
       },
+
+      gridTemplateColumns: {
+        fluidity: "repeat(auto-fit, minmax(18rem, auto))",
+      },
     },
   },
   plugins: [],
