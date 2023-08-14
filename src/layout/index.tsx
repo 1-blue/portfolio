@@ -1,4 +1,4 @@
-import ScrollProgressBar from "@src/components/ScrollProgressBar";
+import ScrollProgressBar from "@src/components/Common/ScrollProgressBar";
 import Header from "@src/layout/Header";
 import Nav from "@src/layout/Nav";
 import Aside from "@src/layout/Aside";
