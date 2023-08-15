@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.simpleicons.org",
       },
+      {
+        protocol: "https",
+        hostname: "bleportfolio.s3.ap-northeast-2.amazonaws.com",
+      },
     ],
   },
 };
