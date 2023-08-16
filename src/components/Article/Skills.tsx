@@ -12,7 +12,10 @@ import Skill from "@src/components/Skill";
 /** 2023/08/14 - (third) 내 스킬들 컴포넌트 - by 1-blue */
 const Skills = () => {
   return (
-    <article id="skills" className="pt-24 pb-12 px-[16vw] bg-violet-400">
+    <article
+      id="skills"
+      className="pt-12 pb-20 px-[4vw] lg:px-[16vw] bg-violet-400"
+    >
       <section className="max-w-[1080px] mx-auto space-y-8">
         <h3 className="text-4xl font-bold text-center text-white drop-shadow-lg">{`<Skills />`}</h3>
 

@@ -7,13 +7,11 @@ import Arrow from "@src/components/Common/Carousel/Arrow";
 
 const variants: Variants = {
   initial: (dir: boolean) => ({
-    // zIndex: -1,
     position: "relative",
     x: dir ? "100%" : "-100%",
     opacity: 0,
   }),
   animate: {
-    // zIndex: 0,
     x: 0,
     opacity: 1,
     transition: {
@@ -21,7 +19,6 @@ const variants: Variants = {
     },
   },
   exit: (dir: boolean) => ({
-    // zIndex: -1,
     position: "absolute",
     x: dir ? "-100%" : "100%",
     opacity: 0,
@@ -86,7 +83,7 @@ const Single: React.FC<React.PropsWithChildren<Props>> = ({
       <AnimatePresence initial={false} custom={dir}>
         <motion.figure
           key={uniqueKey}
-          className="relative w-full max-w-[1024px] mx-auto h-[50vh] bg-sub-100 rounded-md"
+          className="relative w-full max-w-[1024px] mx-auto h-[50vh] bg-sub-400 rounded-md"
           variants={variants}
           initial="initial"
           animate="animate"

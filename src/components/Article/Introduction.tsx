@@ -16,9 +16,9 @@ const Introduction: React.FC = () => {
 
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black/50 to-transparent z-[1]" />
 
-        <div className="relative top-12 max-w-[1080px] mx-auto text-white z-[1] space-y-5">
+        <div className="relative top-12 max-w-[1080px] mx-auto px-[4vw] lg:px-0 text-white z-[1] space-y-5">
           <h1 className="font-bold text-6xl text-center drop-shadow-lg">{`<박상은 />`}</h1>
-          <h2 className="font-bold text-4xl text-center drop-shadow-lg">
+          <h2 className="font-bold text-4xl text-center drop-shadow-lg whitespace-nowrap">
             - 프론트엔드 개발자 -
           </h2>
           <p className="text-xl text-center drop-shadow-lg leading-relaxed">

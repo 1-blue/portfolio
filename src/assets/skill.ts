@@ -74,15 +74,16 @@ export const frontendSkills: Skill[] = [
     color: "#61DAFB",
     displayName: "React.js",
     description: `JSX, Hook, State, Component 등의 개념에 대해 이해하고 사용할 수 있습니다.`,
-    // TODO:
-    link: "https://1-blue.github.io/posts/React%EC%9D%98-%EB%8F%99%EC%9E%91%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0",
+    // FIXME:
+    link: "https://1-blue.github.io/posts/React%EC%9D%98-%EB%8F%99%EC%9E%91%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0/",
   },
   {
     name: "nextdotjs",
     color: "#000000",
     displayName: "Next.js",
     description: `CSR, SSR, SSG, ISR 등의 개념을 이해했고, 12버전을 기준으로 각 개념들을 구현해본 경험이 있습니다.`,
-    link: "https://velog.io/@1-blue/CSR-SSR-SSG-ISR-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC-Next.js",
+    // FIXME:
+    link: "https://velog.io/@1-blue/CSR-SSR-SSG-ISR-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC-Next.js/",
   },
   {
     name: "tailwindcss",
