@@ -2,7 +2,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { type Variants, motion, useScroll, useTransform } from "framer-motion";
 import { Bars3Icon } from "@heroicons/react/24/outline";
+import { twMerge } from "tailwind-merge";
 
+import useScrollDirection from "@src/hooks/useScrollDirection";
 import useWindowSize from "@src/hooks/useWindowSize";
 
 const variants: Variants = {
@@ -21,6 +23,7 @@ const variants: Variants = {
 
 /** 2023/08/13 - <nav>을 감싸는 컴포넌트 - by 1-blue */
 const Nav: React.FC = () => {
+  const { isUp } = useScrollDirection();
   const { width } = useWindowSize();
   const widthMoreThen768 = (width || 0) > 768;
 
@@ -39,7 +42,12 @@ const Nav: React.FC = () => {
   const [isShow, setIsShow] = useState(false);
 
   return (
-    <nav className="relative mt-2 w-full h-full flex flex-col text-white font-sub">
+    <nav
+      className={twMerge(
+        "relative mt-2 w-full h-full flex flex-col text-white font-sub duration-200",
+        isUp ? "-translate-y-[400%]" : "translate-y-0"
+      )}
+    >
       <motion.div
         className="flex justify-between items-center px-8 md:px-24"
         style={{ backgroundColor, backdropFilter }}

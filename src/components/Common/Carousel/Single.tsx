@@ -85,7 +85,7 @@ const Single: React.FC<React.PropsWithChildren<Props>> = ({
       <AnimatePresence initial={false} custom={dir}>
         <motion.figure
           key={uniqueKey}
-          className="relative w-full max-w-[1024px] mx-auto h-[50vh] bg-sub-400 rounded-md"
+          className="w-full max-w-[1024px] mx-auto h-[50vh] bg-sub-400 rounded-md"
           variants={variants}
           initial="initial"
           animate="animate"
@@ -110,12 +110,14 @@ const Single: React.FC<React.PropsWithChildren<Props>> = ({
           }}
         >
           {src && (
-            <motion.div>
+            <motion.div className="relative w-full h-full">
               <Image
                 src={src}
                 alt="썸네일"
                 className="pointer-events-none object-contain"
                 fill
+                placeholder="blur"
+                blurDataURL="/gif/spinner.gif"
               />
             </motion.div>
           )}
