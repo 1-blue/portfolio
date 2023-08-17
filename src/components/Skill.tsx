@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import { isMobile } from "react-device-detect";
 import { type Variants, motion } from "framer-motion";
 
 import Tooltip from "@src/components/Common/Tooltip";
@@ -21,14 +22,14 @@ const Skill: React.FC<Props> = ({
   link,
 }) => {
   const [isHover, setIsHover] = useState(false);
-  const [isClick, setIsClick] = useState(false);
+  const [isTouch, setIsTouch] = useState(false);
 
   return (
     <motion.figure
       className="relative w-20 h-20"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      onClick={() => setIsClick((prev) => !prev)}
+      onTouchStart={() => setIsTouch((prev) => !prev)}
       variants={variants}
       role="button"
     >
@@ -42,7 +43,7 @@ const Skill: React.FC<Props> = ({
       />
 
       <Tooltip
-        show={isHover || isClick}
+        show={isMobile ? isTouch : isHover}
         title={displayName}
         description={description}
         link={link}

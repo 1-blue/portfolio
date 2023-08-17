@@ -79,7 +79,9 @@ const Single: React.FC<React.PropsWithChildren<Props>> = ({
   };
 
   return (
-    <article className={twMerge("relative", className && className)}>
+    <article
+      className={twMerge("relative overflow-hidden", className && className)}
+    >
       <AnimatePresence initial={false} custom={dir}>
         <motion.figure
           key={uniqueKey}
